@@ -12,7 +12,7 @@ import { AssignmentsService } from './shared/assignments.service';
     .app-title {
       text-align: center;
       padding: 10px;
-      color: #333;
+      color: #ffff;
     }
     `
   ]
