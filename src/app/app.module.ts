@@ -35,12 +35,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 const routes: Routes = [
   {
     path: '',
-    component: AssignmentsComponent
+    component: LoginComponent//AssignmentsComponent
   },
-  // {
-  //   path: 'home',
-  //   component: AssignmentsComponent
-  // },
+   {
+     path: 'home',
+     component: AssignmentsComponent
+   },
   {
     path: 'add',
     component: AddAssignmentComponent
