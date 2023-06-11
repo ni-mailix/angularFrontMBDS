@@ -1,8 +1,18 @@
-<h1 class="app-title">
-    <nav>
-        <a routerLink="/home" >{{title}}</a>
-    </nav>
-</h1>
+<div class="container">
+    <div class="column1">
+        <h1 class="app-title" >
+            <nav>
+                <a routerLink="/home">{{title}}</a>
+            </nav>
+        </h1>
+    </div>
+    <div class="column2">
+        <h2  > 
+            <a routerLink="" style="font-size: 16px; font-weight: normal;"> Déconnection
+            </a>
+        </h2>
+    </div>
+</div>
 <p class="text-right">
     <button mat-raised-button color="primary" (click)="creerDonneesDeTest()">
         Peupler BD avec données de test

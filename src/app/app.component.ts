@@ -11,7 +11,6 @@ import { AssignmentsService } from './shared/assignments.service';
     `
     .app-title {
       text-align: center;
-      background-color: #f2f2f2;
       padding: 10px;
       color: #333;
     }
