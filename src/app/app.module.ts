@@ -30,16 +30,17 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { EditAssignmentComponent } from './assignments/edit-assignment/edit-assignment.component';
 import { authGuard } from './shared/auth.guard';
 import { LoginComponent } from './login/login.component';  
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 const routes: Routes = [
   {
     path: '',
     component: AssignmentsComponent
   },
-  {
-    path: 'home',
-    component: AssignmentsComponent
-  },
+  // {
+  //   path: 'home',
+  //   component: AssignmentsComponent
+  // },
   {
     path: 'add',
     component: AddAssignmentComponent
@@ -77,7 +78,7 @@ const routes: Routes = [
     MatButtonModule, MatIconModule, MatDividerModule,
     MatInputModule, MatFormFieldModule, MatDatepickerModule,
     MatListModule, MatCardModule, MatCheckboxModule, MatSlideToggleModule,
-    MatTableModule, MatPaginatorModule
+    MatTableModule, MatPaginatorModule, MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

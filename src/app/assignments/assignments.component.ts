@@ -10,7 +10,7 @@ import { filter, map, pairwise, tap, throttleTime } from 'rxjs';
   styleUrls: ['./assignments.component.css']
 })
 export class AssignmentsComponent implements OnInit {
-  titre="Liste des devoirs à rendre";
+  titre="Liste des devoirs";
   // les données à afficher
   assignments:Assignment[] = [];
   // Pour la data table
