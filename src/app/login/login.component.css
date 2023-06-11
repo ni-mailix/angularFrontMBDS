@@ -1,17 +1,53 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
-
-.login {
-    width: 400px;
-    margin: 16px auto;
-    font-size: 16px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
   .login-header {
     background: rgb(12, 77, 129);
     padding: 20px;
-    font-size: 1.4em;
+    font-size: 15px;
     font-weight: normal;
-    text-align: center;
-    text-transform: uppercase;
+    text-align: right;
     color: #fff;
+    width: 400px;
+    line-height: 3;
+  }
+
+  .action-button {
+    background: rgb(219, 111, 176);
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+}
+
+.taille-champ
+{
+    width: 200px;
+    height: 27px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .custom-button {
+    width: 200px; /* Modifier la largeur selon tes besoins */
+    height: 40px; /* Modifier la hauteur selon tes besoins */
+    background-color: #69d7d3; /* Modifier la couleur de fond selon tes besoins */
+    color: #1e0760; /* Modifier la couleur du texte selon tes besoins */
   }

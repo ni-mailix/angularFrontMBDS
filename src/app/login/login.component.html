@@ -1,18 +1,20 @@
-<form>
+<div class="container">
+<h1 class="app-title-login">
     <div class="login-header">
-    <div>
-      <label for="username">Nom d'utilisateur:</label>
-      <input type="text" id="username" name="username" required>
+        <div>
+            <label for="username">Nom d'utilisateur:   </label>
+            <input type="text" id="username" name="username" required class="taille-champ">
+        </div>
+        <div>
+            <label for="password">Mot de passe:   </label>
+            <input type="password" id="password" name="password" required class="taille-champ">
+        </div>
+        <div class="button-container">
+            <a routerLink="/home">
+                <button type="submit" class="custom-button">Connexion</button>
+            </a>
+        </div>
     </div>
-    <div>
-      <label for="password">Mot de passe:</label>
-      <input type="password" id="password" name="password" required>
-    </div>
-    <div>
-        <a routerLink="/home">
-      <button type="submit">Connexion</button>
-    </a>
-    </div>
+</h1>
 </div>
-  </form>
-  
+
