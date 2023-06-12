@@ -3,6 +3,7 @@ import { Assignment } from './assignment.model';
 import { AssignmentsService } from '../shared/assignments.service';
 import { CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
 import { filter, map, pairwise, tap, throttleTime } from 'rxjs';
+import { MatSort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-assignments',
@@ -10,6 +11,8 @@ import { filter, map, pairwise, tap, throttleTime } from 'rxjs';
   styleUrls: ['./assignments.component.css']
 })
 export class AssignmentsComponent implements OnInit {
+  @ViewChild(MatSort)
+  sort!: MatSort;
   titre="Liste des devoirs";
   // les données à afficher
   assignments:Assignment[] = [];

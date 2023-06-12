@@ -31,6 +31,7 @@ import { EditAssignmentComponent } from './assignments/edit-assignment/edit-assi
 import { authGuard } from './shared/auth.guard';
 import { LoginComponent } from './login/login.component';  
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSort, MatSortModule } from '@angular/material/sort';
 
 const routes: Routes = [
   {
@@ -78,7 +79,7 @@ const routes: Routes = [
     MatButtonModule, MatIconModule, MatDividerModule,
     MatInputModule, MatFormFieldModule, MatDatepickerModule,
     MatListModule, MatCardModule, MatCheckboxModule, MatSlideToggleModule,
-    MatTableModule, MatPaginatorModule, MatSidenavModule
+    MatTableModule, MatPaginatorModule, MatSidenavModule,MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
