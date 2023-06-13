@@ -12,13 +12,31 @@
 
 .login-header {
     background: rgb(12, 77, 129);
-    padding: 20px;
+    padding: 50px;
     font-size: 15px;
     font-weight: normal;
     text-align: right;
     color: #fff;
     width: 400px;
     line-height: 3;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .mat-form{
+    width: 350px;
+    height : 90px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: right;
+    background-color :rgb(93, 150, 199);
+    margin: 0 auto;
+  }
+
+  .form-field {
+    display: flex;
     justify-content: center;
     margin: 0 auto;
   }
