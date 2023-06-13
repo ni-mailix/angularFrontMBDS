@@ -1,18 +1,27 @@
-<form ngForm #assignmentForm (submit)="onSubmit($event); assignmentForm.reset()" class="form">
-
-    <mat-form-field>
-        <input matInput [(ngModel)]="nomDevoir" name="nom" placeholder="Nom du devoir" required>
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-        <mat-label>Date de rendu</mat-label>
-        <input matInput [matDatepicker]="picker" [(ngModel)]="dateDeRendu" name="date" required>
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
-
-    <button mat-stroked-button color="primary">
-        Ajouter un devoir
-    </button>
-</form>
+<form ngForm #assignmentForm (submit)="onSubmit($event); assignmentForm.reset()">  
+<div class="container">
+    <h1 class="app-title-login">
+        <div class="login-header d-flex justify-content-center"> 
+            <div>
+                <mat-form-field class="mat-form">
+                    <input matInput [(ngModel)]="nomDevoir" name="nom" placeholder="Nom du devoir" required>
+                  </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="fill" class="mat-form">
+                    <mat-label>Date de rendu</mat-label>
+                    <input matInput [matDatepicker]="picker" [(ngModel)]="dateDeRendu" name="date" required>
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+            </div>
+            <div >
+                <button mat-stroked-button color="primary" class="button-container">
+                    Ajouter devoir
+                  </button>
+            </div>
+        </div>
+    </h1>
+</div>
+</form> 

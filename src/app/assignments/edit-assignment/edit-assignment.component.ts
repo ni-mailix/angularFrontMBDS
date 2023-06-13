@@ -7,6 +7,18 @@ import { Assignment } from '../assignment.model';
  selector: 'app-edit-assignment',
  templateUrl: './edit-assignment.component.html',
  styleUrls: ['./edit-assignment.component.css'],
+ styles: [
+  `
+  .app-title-login {
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    width: 500px;
+    align : center;
+    color : green;
+  }
+  `
+]
 })
 export class EditAssignmentComponent implements OnInit {
  assignment!: Assignment | undefined;

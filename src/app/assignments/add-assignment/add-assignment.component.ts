@@ -6,7 +6,18 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-add-assignment',
   templateUrl: './add-assignment.component.html',
-  styleUrls: ['./add-assignment.component.css']
+  styleUrls: ['./add-assignment.component.css'],
+  styles: [
+    `
+    .app-title-login {
+      text-align: center;
+      padding: 10px;
+      color: #333;
+      width: 500px;
+      align : center;
+    }
+    `
+  ]
 })
 export class AddAssignmentComponent {
 

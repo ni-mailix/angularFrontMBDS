@@ -42,8 +42,8 @@ export class AssignmentsComponent implements OnInit {
     // page et limit, récupérer leur valeurs si elles existent
     // et les passer à la méthode getAssignments
     // TODO
-
     this.getAssignments();
+
   }
 
   ngAfterViewInit() { 
