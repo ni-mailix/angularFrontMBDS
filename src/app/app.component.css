@@ -16,3 +16,8 @@
     background-color: rgb(139, 242, 166);
     width: 100vw;
   }
+
+  .custom-toolbar {
+    height: 100px;
+    background-color: rgb(204, 229, 250);
+  }

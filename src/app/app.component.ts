@@ -3,6 +3,7 @@ import { AuthService } from './shared/auth.service';
 import { NavigationEnd, Router } from '@angular/router';
 import { AssignmentsService } from './shared/assignments.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
