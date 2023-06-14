@@ -659,7 +659,7 @@ export const bdInitialAssignments = [{ "id": 1, "nom": "Vitz", "dateDeRendu": "2
 { "id": 659, "nom": "Livetube", "dateDeRendu": "2023-09-30", "rendu": false },
 { "id": 660, "nom": "Zooveo", "dateDeRendu": "2023-09-18", "rendu": false },
 { "id": 661, "nom": "Twitterbeat", "dateDeRendu": "2023-10-06", "rendu": true },
-{ "id": 662, "nom": "Vitz", "dateDeRendu": "2023-09-12", "rendu": false },
+{ "id": 662, "nom": "Vitz", "dateDeRendu": "2023-09-12", "rendu": true },
 { "id": 663, "nom": "Plambee", "dateDeRendu": "2023-10-05", "rendu": true },
 { "id": 664, "nom": "Edgeblab", "dateDeRendu": "2023-09-13", "rendu": true },
 { "id": 665, "nom": "Mymm", "dateDeRendu": "2023-09-29", "rendu": true },
