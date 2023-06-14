@@ -1,14 +1,14 @@
 <form ngForm #assignmentForm (submit)="onSubmit($event); assignmentForm.reset()">  
 <div class="container">
     <h1 class="app-title-login">
-        <div class="login-header d-flex justify-content-center"> 
-            <div>
-                <mat-form-field class="mat-form">
+        <div class="login-header"> 
+            <div class="mat-form">
+                <mat-form-field class="form-field">
                     <input matInput [(ngModel)]="nomDevoir" name="nom" placeholder="Nom du devoir" required>
                   </mat-form-field>
             </div>
-            <div>
-                <mat-form-field appearance="fill" class="mat-form">
+            <div class="mat-form">
+                <mat-form-field appearance="fill" class="form-field">
                     <mat-label>Date de rendu</mat-label>
                     <input matInput [matDatepicker]="picker" [(ngModel)]="dateDeRendu" name="date" required>
                     <mat-hint>MM/DD/YYYY</mat-hint>

@@ -2,17 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .login-header {
-    background: rgb(12, 77, 129);
-    padding: 20px;
-    font-size: 15px;
-    font-weight: normal;
-    text-align: right;
-    color: #fff;
-    width: 400px;
-    line-height: 3;
-    justify-content: center;
-    margin: 0 auto;
-  }
+  background: rgb(12, 77, 129);
+  padding: 50px;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: right;
+  color: #fff;
+  justify-content: center;
+  margin: 0 auto;
+}
 
 .form {
     display: flex;
@@ -36,4 +34,10 @@
   .mat-form{
     width: 350px;
     height : 90px;
+  }
+
+  .form-field {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
