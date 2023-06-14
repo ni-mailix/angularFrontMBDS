@@ -13,6 +13,5 @@
 
   .container {
     display: flex;
-    justify-content: space-between;
     background-color: rgb(139, 242, 166);
   }

@@ -16,37 +16,38 @@
     </form>
    </div>
        -->
-<p></p>
-<p></p>
-<p></p>
-       <div class="container" *ngIf="assignment">
-        <mat-sidenav-container>
-          <mat-sidenav mode="side" opened>
-        <h1 class="app-title-login " style ="font-size :16px ; color : green;">Edition de l'assignment : <p style ="font-size: 20px; color : rgb(222, 91, 176);">{{assignment.nom}}</p></h1>
-      </mat-sidenav>
-      <mat-sidenav-content>
-        <form ngForm class="form d-flex flex-column" #formupdate (submit)="onSaveAssignment(); formupdate.reset(); ">
-          <div class="login-header d-flex justify-content-center">
-            <div class="mat-form ">
-              <mat-form-field class="form-field">
-                <input matInput placeholder="Edition du nom" [(ngModel)]="nomAssignment" name="assignment-name" >
-              </mat-form-field>
-            </div>
-            <div class="mat-form ">
-              <mat-form-field class="form-field">
-                <input matInput [matDatepicker]="picker" placeholder="Edition de la date" [(ngModel)]="dateDeRendu" name="date" >
-                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker #picker></mat-datepicker>
-              </mat-form-field>
-            </div>
-            <div>
-              <button mat-raised-button color="primary" [disabled]="((!nomAssignment)||(!dateDeRendu))" class="button-container">
-                Sauver
-              </button>
-            </div>
+
+<div  *ngIf="assignment" class="container">
+  <mat-sidenav-container >
+    <mat-sidenav mode="side" opened>
+      <h1 class="app-title-login " style="font-size :16px ; color : green;">Edition de l'assignment : <p
+          style="font-size: 20px; color : rgb(222, 91, 176);">{{assignment.nom}}</p>
+      </h1>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <form ngForm class="form" #formupdate (submit)="onSaveAssignment(); formupdate.reset(); ">
+        <div class="login-header ">
+          <div class="mat-form ">
+            <mat-form-field class="form-field">
+              <input matInput placeholder="Edition du nom" [(ngModel)]="nomAssignment" name="assignment-name">
+            </mat-form-field>
           </div>
-        </form>
-      </mat-sidenav-content>
-      </mat-sidenav-container>
-      </div>
-      
+          <div class="mat-form ">
+            <mat-form-field class="form-field">
+              <input matInput [matDatepicker]="picker" placeholder="Edition de la date" [(ngModel)]="dateDeRendu"
+                name="date">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div>
+            <button mat-raised-button color="primary" [disabled]="((!nomAssignment)||(!dateDeRendu))"
+              class="button-container">
+              Sauver
+            </button>
+          </div>
+        </div>
+      </form>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
