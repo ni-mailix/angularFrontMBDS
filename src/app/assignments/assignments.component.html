@@ -28,7 +28,7 @@
 
     <div class="entete-liste-devoir">
 
-        <div class="col-md-6">
+        <div class="text-right" style="margin-right: 40px;">
             <p class="bouton-right">
                 Régler nb par page :
                 <input type="range" min="1" max="100" value="10" [(ngModel)]="limit" (change)="getAssignments()" />
@@ -44,7 +44,7 @@
                     </a>
                 </nav>
             </div>
-            <div class="column2">
+            <div class="column2 text-right">
                 <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons
                     aria-label="Selection de la page des assigments" (page)="handlePage($event)"
                     class="demo-paginator entete-liste-devoir" [length]="totalPages" [pageSize]="limit"

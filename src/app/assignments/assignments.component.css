@@ -62,7 +62,7 @@
     text-align: right;
     color:rgb(27, 65, 168);
     font-size: 15px;
-    margin : 20px;
+    margin : 10px;
   }
   .entete-liste-devoir{
     background-color: rgb(204, 158, 247);
@@ -75,7 +75,7 @@
 
   .column2 {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 5px;
   }
 
   .container2 {
