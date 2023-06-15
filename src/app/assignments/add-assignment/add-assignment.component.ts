@@ -24,7 +24,8 @@ export class AddAssignmentComponent {
   // champs du formulaire
   nomDevoir = "";
   dateDeRendu!: Date;
-
+  matiere! : string;
+  matiereSelectionnee!: string;
 
   constructor(private assignmentsService: AssignmentsService,
               private router:Router) { }
@@ -40,6 +41,7 @@ export class AddAssignmentComponent {
     nouvelAssignment.nom = this.nomDevoir;
     nouvelAssignment.dateDeRendu = this.dateDeRendu;
     nouvelAssignment.rendu = false;
+    nouvelAssignment.matiere = this.matiere;
 
     // on demande au service d'ajouter l'assignment
     this.assignmentsService.addAssignment(nouvelAssignment)
@@ -52,4 +54,11 @@ export class AddAssignmentComponent {
 
       });
   }
+
+  matieres = [
+    { nom: 'Angular', avatar: 'assets/images/angular.jpg' },
+    { nom: 'Big-DATA', avatar: 'assets/images/big-data.jpg' },
+    { nom: 'Anglais', avatar: 'assets/images/anglais.jpg' },
+    { nom: 'Analyse-des-données', avatar: 'assets/images/analyse-des donnees.jpg' }
+  ];
 }

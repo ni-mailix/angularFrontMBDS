@@ -25,6 +25,9 @@ export class EditAssignmentComponent implements OnInit {
  // associées aux champs du formulaire
  nomAssignment!: string;
  dateDeRendu!: Date;
+ matiere!:string;
+ matiereSelectionnee!: string;
+
 
  constructor(
    private assignmentsService: AssignmentsService,
@@ -57,6 +60,7 @@ export class EditAssignmentComponent implements OnInit {
     // Pour pré-remplir le formulaire
     this.nomAssignment = assignment.nom;
     this.dateDeRendu = assignment.dateDeRendu;
+    this.matiere = assignment.matiere;
   });
 }
 onSaveAssignment() {
@@ -74,4 +78,11 @@ onSaveAssignment() {
       this.router.navigate(['/home']);
     });
 }
+matieres = [
+  { nom: 'Angular', avatar: 'assets/images/angular.jpg' },
+  { nom: 'Big-DATA', avatar: 'assets/images/big-data.jpg' },
+  { nom: 'Anglais', avatar: 'assets/images/anglais.jpg' },
+  { nom: 'Analyse-des-données', avatar: 'assets/images/analyse-des donnees.jpg' }
+];
+
 }

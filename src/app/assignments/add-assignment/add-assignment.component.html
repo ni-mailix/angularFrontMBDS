@@ -16,6 +16,17 @@
                     <mat-datepicker #picker></mat-datepicker>
                   </mat-form-field>
             </div>
+            <div class="mat-form ">
+            <mat-form-field class="form-field">
+                <input matInput placeholder="Edition de la matiere" [(ngModel)]="matiereSelectionnee" name="assignment-name" [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option *ngFor="let matiere of matieres" [value]="matiere.nom">
+                    <img class="mat-avatar" [src]="matiere.avatar">
+                    <span>{{ matiere.nom }}</span>
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+            </div>
             <div >
                 <button mat-stroked-button color="primary" class="button-container">
                     Ajouter devoir

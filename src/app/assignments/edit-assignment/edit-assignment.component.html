@@ -19,7 +19,7 @@
 
 <div  *ngIf="assignment"  class="container">
   <mat-sidenav-container >
-    <mat-sidenav mode="side" opened>
+    <mat-sidenav mode="side" opened style="background-color: rgb(196, 221, 238);">
       <h1 class="app-title-login " style="font-size :16px ; color : green;">Edition de l'assignment : <p
           style="font-size: 20px; color : rgb(222, 91, 176);">{{assignment.nom}}</p>
       </h1>
@@ -39,6 +39,24 @@
               <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
               <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
+          </div>
+          <div class="mat-form ">
+            <!-- <mat-form-field class="form-field">
+              <input matInput placeholder="Edition de la matiere" [(ngModel)]="matiere" name="assignment-name">
+            </mat-form-field> -->
+
+              <mat-form-field class="form-field">
+                <input matInput placeholder="Edition de la matiere" [(ngModel)]="matiereSelectionnee" name="assignment-name" [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option *ngFor="let matiere of matieres" [value]="matiere.nom">
+                    <img class="mat-avatar" [src]="matiere.avatar">
+                    <span>{{ matiere.nom }}</span>
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+              
+
+            
           </div>
           <div>
             <button mat-raised-button color="primary" [disabled]="((!nomAssignment)||(!dateDeRendu))"
