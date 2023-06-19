@@ -15,12 +15,13 @@ assignments:Assignment[] = []
     private http:HttpClient) { }
 
     //uri_api = 'http://localhost:8010/api/assignments';
-    uri_api = 'https://mbds-madagascar-2022-2023-back-end.onrender.com/api/assignments';
+    uri_api = 'https://mbds-api.onrender.com/api/assignments';
+    
 
   getAssignments(page:number, limit:number):Observable<any> {
     // normalement on doit envoyer une requête HTTP
     // sur un web service, et ça peut prendre du temps
-    // On a donc besoin "d'attendre que les données arrivent".
+    // On a donc besoin "d'attendre que les données arrivent".   
     // Angular utilise pour cela la notion d'Observable
     return this.http.get<Assignment[]>(this.uri_api + "?page=" + page + "&limit=" + limit);
     
