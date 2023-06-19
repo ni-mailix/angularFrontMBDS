@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding : 60px;
 }
   
   
@@ -51,4 +52,5 @@
     background-color: #e616e9; 
     color: #0d1147; 
     background-color: rgb(233, 176, 85);
+    padding-bottom : 3px;
   }

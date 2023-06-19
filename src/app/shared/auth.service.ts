@@ -16,6 +16,7 @@ export class AuthService {
   logIn() {
     console.log("ON SE LOGGE")
     this.loggedIn = true;
+    return this.loggedIn;
   }
 
   logOut() {

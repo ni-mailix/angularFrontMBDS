@@ -1,20 +1,18 @@
 <div class="container">
-<h1 class="app-title-login">
-    <div class="login-header">
+    <h1 class="app-title-login">
+      <div class="login-header">
         <div>
-            <label for="username">Nom d'utilisateur:   </label>
-            <input type="text" id="username" name="username" required class="taille-champ">
+          <label for="username">Nom d'utilisateur:</label>
+          <input type="text" id="username" name="username" required class="taille-champ" [(ngModel)]="username">
         </div>
         <div>
-            <label for="password">Mot de passe:   </label>
-            <input type="password" id="password" name="password" required class="taille-champ">
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" name="password" required class="taille-champ" [(ngModel)]="password">
         </div>
         <div class="button-container">
-            <a routerLink="/home">
-                <button type="submit" class="custom-button">Connexion</button>
-            </a>
+          <button type="submit" class="custom-button" (click)="onSubmit()">Connexion</button>
         </div>
-    </div>
-</h1>
-</div>
-
+      </div>
+    </h1>
+  </div>
+  
