@@ -15,7 +15,7 @@ export class AuthService {
   // elle devrait renvoyer un Observable etc.
   logIn() {
     console.log("ON SE LOGGE")
-    this.loggedIn = true;
+    this.loggedIn = false;
     return this.loggedIn;
   }
 

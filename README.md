@@ -27,6 +27,6 @@ le projet est accessible dans les liens suivants :
 - github : https://github.com/PrinciaMalanto/api_MBDS.git
 
 # **CONTRIBUTION**
-pendant la réalisation de ce projet, beaucoup de source on été utilisé, principalement ChatGPT et material.angular.io,
+pendant la réalisation de ce projet, divers source ont été utilisé, principalement ChatGPT et material.angular.io,
 par exemple dans l'utilisation de l'avatar, 
 dans les styles CSS, chatGPT a joué un rôle majeur.
