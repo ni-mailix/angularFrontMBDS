@@ -1,7 +1,7 @@
 # **PROJET ANGULAR GESTION DE DEVOIR**
 Le projet entre dans le cadre d'étude en MBDS année 2022-2023 par Mr Michel BUFFA
 
-#LES MEMBRES
+# **LES MEMBRES**
 ce dépôt git a été concocté par les étudiants divisés en groupe de 2
 15 - RABE Princia
 7 - ANDRIANANTENAINA Ranjanirina André
