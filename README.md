@@ -18,11 +18,11 @@ la partie FRONT a été développé par André, dont les principaux travaux sont
 
 # **ACCESSIBILITE**
 le projet est accessible dans les liens suivants :
-FRONT-END :
-github : https://github.com/ni-mailix/angularFrontMBDS.git
-render : https://angularmbds-itu2023-and-pri.onrender.com/
-BACKEND : 
-github : https://github.com/PrinciaMalanto/api_MBDS.git
+* FRONT-END :
+- github : https://github.com/ni-mailix/angularFrontMBDS.git
+- render : https://angularmbds-itu2023-and-pri.onrender.com/
+* BACKEND : 
+- github : https://github.com/PrinciaMalanto/api_MBDS.git
 
 # **CONTRIBUTION**
 pendant la réalisation de ce projet, beaucoup de source on été utilisé, principalement ChatGPT et material.angular.io,
