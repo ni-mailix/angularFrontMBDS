@@ -9,12 +9,12 @@ ce dépôt git a été concocté par les étudiants divisés en groupe de 2
 # **LE PROJET**
 le projet est divisé en 2 grandes parties :FRONT-END et BACK-END
 la partie FRONT a été développé par André, dont les principaux travaux sont :
-1 - amélioration générale des affichages : login, affichage détail, ajout devoir, update des dévoirs
-2 - ajout nouveau propriété Matière
-3 - modification service authentification
-4 - ajout avatar dans la liste des matières
-5 - ajout des matériels angular : side-nav, toolbar...
-6 - création hébergement dans render.com
+* 1 - amélioration générale des affichages : login, affichage détail, ajout devoir, update des dévoirs
+* 2 - ajout nouveau propriété Matière
+* 3 - modification service authentification
+* 4 - ajout avatar dans la liste des matières
+* 5 - ajout des matériels angular : side-nav, toolbar...
+* 6 - création hébergement dans render.com
 
 # **ACCESSIBILITE**
 le projet est accessible dans les liens suivants :
