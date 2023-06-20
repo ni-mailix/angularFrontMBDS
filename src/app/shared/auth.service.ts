@@ -1,27 +1,53 @@
 import { Injectable } from '@angular/core';
+import { Observable, tap } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  loggedIn = true;
+  loggedIn = false;
 
-  constructor() { }
+  constructor(private http:HttpClient) { 
+  }
 
+  /* Users dans la base de donnees avec leur name/mdp valides
+  users = [
+    { 
+      id: 1,
+      name: 'Andre',
+      password: 'andre',
+      role: 'user'
+    },
+    {
+      id: 2,
+      name: 'Princia',
+      password: 'princia',
+      role: 'user'
+    },
+    {
+      id: 3,
+      name: 'John',
+      password: 'john',
+      role: 'admin'
+    }
+  ];*/
+  
+  uri_api = 'https://mbds-api.onrender.com/api/login';
   // théoriquement, on devrait passer en paramètre le login
   // et le password, cette méthode devrait faire une requête
   // vers un Web Service pour vérifier que c'est ok, renvoyer
   // un token d'authentification JWT etc.
   // elle devrait renvoyer un Observable etc.
-  logIn() {
+  logIn(name:string, password:string) :Observable<any> {
     console.log("ON SE LOGGE")
-    this.loggedIn = false;
-    return this.loggedIn;
+    return this.http.post(this.uri_api, {name, password})
   }
 
   logOut() {
     console.log("ON SE DELOGGE")
-
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('username');
     this.loggedIn = false;
   }
 

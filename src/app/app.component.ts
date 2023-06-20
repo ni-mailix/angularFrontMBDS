@@ -21,8 +21,8 @@ import { AssignmentsService } from './shared/assignments.service';
 export class AppComponent {
   title = 'Application de gestion de devoirs à rendre';
   labelConnexion = "Se connecter";
-  nom:string = "";
-  currentRoute:string = "";
+  nom = localStorage.getItem('username') ;
+  currentRoute:string ="";
 
   constructor(private authService:AuthService, 
               private router:Router,
@@ -42,7 +42,7 @@ export class AppComponent {
   login() {
     // utilise l'authService pour se connecter
     if(!this.authService.loggedIn) {
-      this.authService.logIn();
+      //this.authService.logIn();
       // on change le label du bouton
       this.labelConnexion = "Se déconnecter";
     } else {
@@ -54,7 +54,7 @@ export class AppComponent {
 
   isLogged() {
     if(this.authService.loggedIn) {
-      this.nom = "Michel Buffa";
+      this.nom = localStorage.getItem('username');
     }
     return this.authService.loggedIn;
   }

@@ -8,19 +8,34 @@ import { AuthService } from '../shared/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  username!: string;
-  password!: string;
+ // champs du formulaire
+username!:  string;
+password! : string;
 
-  constructor(private authService: AuthService, private router: Router) { }
+constructor(private authService: AuthService,
+            private router:Router) { }
 
-  onSubmit() {
-    // Vérification des informations d'identification
-    if (this.authService.logIn()) {
-      // Redirection vers la page d'accueil si les informations d'identification sont valides
-      this.router.navigate(['/home']);
-    } else {
-      // Affichage d'un message d'erreur si les informations d'identification sont incorrectes
-      console.log('Identifiants incorrects');
+onSubmit(event: any) {
+  // On vérifie que les champs ne sont pas vides
+  if (this.username === "") return ; 
+  if (this.password === "") return; 
+
+
+  // on demande au service de vérifier les informations pour se connecter (login/password)
+  this.authService.logIn(this.username,this.password)
+  .subscribe((resp: any) => {
+    if (resp.auth==false){
+      this.authService.loggedIn = false;
     }
-  }
+    else if (resp.auth==true){
+      localStorage.setItem('access_token', resp.token);
+      localStorage.setItem('username',this.username);
+      this.authService.loggedIn = true;
+      this.router.navigate(["/home"]);
+    }
+    else {
+      this.authService.loggedIn = false;
+    }
+  })
+}
 }
