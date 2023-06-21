@@ -23,6 +23,11 @@ le projet est accessible dans les liens suivants :
 * FRONT-END :
 - github : https://github.com/ni-mailix/angularFrontMBDS.git
 - render : https://angularmbds-itu2023-and-pri.onrender.com/
+  
+user/password valides pour l'authentification :
+  Andre/andre (user "Andre", password "andre")
+  Princia/princia (user "Princia", password "princia")
+  
 * BACKEND : 
 - github : https://github.com/PrinciaMalanto/api_MBDS.git
 
